@@ -1,0 +1,8 @@
+register fire
+{
+    rank 0
+    type ORDER
+    always_def false
+    table_addon 0
+    race_mult 1.2
+}
