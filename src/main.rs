@@ -258,7 +258,7 @@ fn generate_default_table_function(should_be_defensive: bool, mag: &Magic) -> Fu
             }
         } else {
             let accuracy: i64 = if args.len() == 4 {
-                if let (Value::Int(acc)) = &args[2] {
+                if let (Value::Int(acc)) = &args[3] {
                     *acc
                 } else {
                     return Err(EvalexprError::CustomMessage(table_help_message(
